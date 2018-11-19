@@ -1,16 +1,16 @@
-## Redux Api Middleware
+## Flexible Redux Api Middleware
 
-A redux api middleware for handling api call and response.
+A simple and flexible redux api middleware for handling api call and response.
 
 ### Installation
-`yarn add redux-api-middleware`
+`yarn add flexible-redux-api-middleware`
 
 ### Setup
 ```javascript
 import { applyMiddleware, createStore } from 'redux';
 
 // api middleware with default api client
-import { apiMiddleware } from 'redux-api-middleware'
+import { apiMiddleware } from 'flexible-redux-api-middleware'
 const store = createStore(
   reducer,
   applyMiddleware(apiMiddleware),
@@ -21,7 +21,7 @@ Or you can create an api middleware with a custom api client
 import { applyMiddleware, createStore } from 'redux';
 
 // api middleware with a custom api client
-import { apiMiddlewareFactory } from 'redux-api-middleware'
+import { apiMiddlewareFactory } from 'flexible-redux-api-middleware'
 
 const api = (options) => {
   return fetch(options)
@@ -36,7 +36,7 @@ const store = createStore(
 ### Usage
 #### Import
 ```javascript
-import { asyncActionType } from 'redux-api-middleware';
+import { asyncActionType } from 'flexible-redux-api-middleware';
 ```
 #### Constant
 ```javascript

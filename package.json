@@ -1,5 +1,5 @@
 {
-  "name": "@flexible/redux-api-middleware",
+  "name": "flexible-redux-api-middleware",
   "version": "0.0.1",
   "description": "A redux middleware for api response, error handling.",
   "main": "dist/index.js",
