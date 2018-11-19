@@ -1,11 +1,11 @@
-## Redux Network Middleware
+## Redux Api Middleware
 
 A redux api middleware for handling api call and response.
 
 ### Installation
 `yarn add redux-api-middleware`
 
-### Usage - Api Middleware
+### Setup
 ```javascript
 import { applyMiddleware, createStore } from 'redux';
 
@@ -16,11 +16,11 @@ const store = createStore(
   applyMiddleware(apiMiddleware),
 );
 ```
-Or you can create your own network middleware with custom
+Or you can create an api middleware with a custom api client
 ```javascript
 import { applyMiddleware, createStore } from 'redux';
 
-// api middleware with custom api client
+// api middleware with a custom api client
 import { apiMiddlewareFactory } from 'redux-api-middleware'
 
 const api = (options) => {
@@ -33,21 +33,21 @@ const store = createStore(
 );
 ```
 
-### Example - Basic
+### Usage
 #### Import
 ```javascript
-import { API_GET, asyncActionType } from 'redux-api-middleware';
+import { asyncActionType } from 'redux-api-middleware';
 ```
 #### Constant
 ```javascript
-// create a async action type
+// create an async action type
 const FETCH_USER_PROFILE = asyncActionType('FETCH_USER_PROFILE');
 ```
 
 #### Action
 ```javascript
 const fetchUserProfile = (id) => ({
-  type: API_GET,
+  type: 'API',
   payload: {
     url: 'https://example.com/user/',
     method: 'GET',

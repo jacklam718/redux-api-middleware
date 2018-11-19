@@ -1,5 +1,5 @@
 {
-  "name": "redux-api-middleware",
+  "name": "@flexible/redux-api-middleware",
   "version": "0.0.1",
   "description": "A redux middleware for api response, error handling.",
   "main": "dist/index.js",
@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "test": "echo no tests",
     "clean": "rimraf dist",
     "build": "npm run clean && babel src/ -d dist/"
   },
