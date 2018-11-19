@@ -1,0 +1,38 @@
+{
+  "name": "redux-api-middleware",
+  "version": "0.0.1",
+  "description": "A redux middleware for api response, error handling.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:jacklam718/redux-api-middleware.git",
+  "author": "jacklam718 <jacklam718@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src/ -d dist/"
+  },
+  "keywords": [
+    "redux",
+    "redux middleware",
+    "redux api middleware",
+    "redux network middleware",
+    "api middleware",
+    "network middleware"
+  ],
+  "dependencies": {
+    "axios": "^0.17.1",
+    "eslint": "^4.15.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "flow-bin": "^0.64.0",
+    "rimraf": "^2.6.2"
+  }
+}
